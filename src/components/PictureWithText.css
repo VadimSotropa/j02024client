@@ -1,0 +1,74 @@
+.picture-container {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  
+ 
+  overflow: hidden; /* Ensure the image and text overlay fit within the container */
+ margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.picture-image {
+  width: 100%;
+  height: 400px; /* Set a fixed height */
+  object-fit: cover; /* Cover the entire container */
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Translucent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; /* Ensure text is visible on the image */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  text-align: center; /* Center-align text within the overlay */
+}
+
+.title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  font-weight: 700; /* Bold title */
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin: 5px 0;
+  font-weight: 400; /* Regular weight for subtitles */
+  line-height: 1.4; /* Improved readability */
+}
+
+@media (max-width: 768px) {
+  .picture-image {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .title {
+    font-size: 2em; /* Adjust title size for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 1em; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .picture-image {
+    height: 200px; /* Further adjustment for mobile devices */
+  }
+
+  .title {
+    font-size: 1.8em; /* Smaller font size for mobile */
+  }
+
+  .subtitle {
+    font-size: 0.9em; /* Smaller font size for mobile */
+  }
+}

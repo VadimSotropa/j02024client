@@ -1,0 +1,479 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Apply Montserrat font globally */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* Part with the selection type of feedback */
+.comment-form{
+  width: 50%;
+  padding-bottom: 40px;
+}
+
+.opinion-header{
+  font-size: 40px;
+  
+}
+
+/* Title text */
+.type-category {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: left; /* Align text to the left */
+  font-size: 19px;
+ font-weight: 400;
+ color: #ccc;
+ 
+}
+
+/* Feedback type selection area */
+.feedback-type {
+  display: flex;
+  justify-content: space-between; /* Align radio buttons evenly */
+  width: 650px;
+  margin-top: 10px; /* Add space between the title and radio buttons */
+  /* background-color: red; */
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 15px; /* Space between each radio button */
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+
+.radio-label input[type='radio'] {
+  appearance: none; /* Remove default styling */
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px; /* Space between the radio button and the label */
+  border: 1px solid #ccc; /* Custom border color */
+  background-color: white; /* Background color */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.radio-label input[type='radio']:checked {
+  background-color:  #66b5f9; /* Checked background color */
+  border-color:  #66b5f9;
+}
+
+.radio-label input[type='radio']:hover {
+  border-color:  #66b5f9; /* Hover border color */
+}
+
+.radio-label input[type='radio']::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+.radio-label input[type='radio']:checked::before {
+  transform: scale(1);
+  background-color: #fff; /* Inner circle color */
+}
+
+/* Categories section */
+.feedback-categories{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 18px;
+  gap: 15px;
+  justify-content: space-between;
+  width: 730px;
+ 
+}
+.feedback-categories input[type='checkbox'] {
+  margin-right: 10px; /* Space between the checkbox and label */
+  cursor: pointer;
+  background-color:  #66b5f9;
+  border-color:  #66b5f9;
+}
+
+/* Ensure labels do not overflow container */
+.feedback-categories label {
+  overflow: hidden; /* Hide overflow to maintain alignment */
+  text-overflow: ellipsis; /* Display ellipsis for long text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  flex-basis: calc(100%/4);
+  display: flex;
+  cursor: pointer;
+  
+}
+
+/* General checkbox styling */
+.feedback-categories input[type='checkbox'] {
+  appearance: none; /* Remove default styling */
+  width: 16px; /* Default checkbox size */
+  height: 16px; /* Default checkbox size */
+  border-radius: 4px; /* Rounded corners for the checkbox */
+  margin-right: 10px; /* Space between the checkbox and label */
+  border: 1px solid #ccc; /* Custom border color */
+  background-color: white; /* Default background color */
+  cursor: pointer; /* Pointer cursor for clickable area */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checkbox checked state */
+.feedback-categories input[type='checkbox']:checked {
+  background-color: #66b5f9; /* Background color when checked */
+  border-color: #66b5f9; /* Border color when checked */
+}
+
+/* Label styling */
+.feedback-categories label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+
+/* Form input container */
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+.form-input-container input,
+.form-input-container textarea {
+  width: 700px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-input-container input {
+  height: 50px;
+  font-size: 18px;
+}
+
+.form-input-container textarea {
+  height: 150px;
+  resize: vertical;
+  font-size: 18px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Submit button styles */
+/* button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4e69f0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ 
+}
+
+button:hover {
+  background-color: #4054b2;
+} */
+
+.btn-submit{
+  width: 702px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #66b5f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 800;
+}
+
+.btn-submit:hover{
+  background-color: #1877F2;
+  cursor: pointer;
+}
+
+.submit-term{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.ligne-betwen{
+  width: 70%;
+  border-bottom: 0.5px solid rgb(197, 190, 190);
+  margin-bottom: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .feedback-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feedback-categories {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Responsive layout for smaller screens */
+  .comment-list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .comment-message,
+  .filters {
+    width: 100%;
+  }
+}
+
+
+.wall-header{
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.comment-list{
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  padding-left: 360px;
+  
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+
+.comment-message{
+  
+  width: 706px;
+  
+  
+  
+}
+
+.comment-message li{
+  list-style-type: none;
+  line-height: 25px;
+  
+  
+  
+}
+
+.coment-message-body{
+  background-color: #ffffffef;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid rgb(197, 190, 190);
+  
+}
+
+  .filter-group   input[type='radio'] {
+    
+    margin-right: 10px; /* Space between the checkbox and label */
+  
+    cursor: pointer; /* Pointer cursor for clickable area */
+  }
+
+  .coment-type-categorie{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .coment-type-categorie p{
+    font-size: 14px;
+    color: rgb(197, 190, 190);
+  }
+
+  .filter-group{
+    
+  }
+
+  .comment-name-country{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
+    font-size: 19px;
+  }
+
+  .coment-country{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 300;
+    font-size: 19px;
+  }
+
+  .coment-coment{
+    text-align: left;
+  }
+
+  /* Filters section */
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+/* Filter group */
+.filter-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px; /* Space between each radio button */
+}
+
+/* Radio buttons */
+.filter-group input[type='radio'] {
+  appearance: none; /* Remove default styling */
+  width: 18px; /* Adjusted size */
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px; /* Space between the radio button and the label */
+  border: 1px solid #ccc; /* Custom border color */
+  background-color: white; /* Background color */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer; /* Pointer cursor for clickable area */
+}
+
+/* Checked state for radio buttons */
+.filter-group input[type='radio']:checked {
+  background-color: #66b5f9; /* Checked background color */
+  border-color: #66b5f9; /* Checked border color */
+}
+
+/* Hover state for radio buttons */
+.filter-group input[type='radio']:hover {
+  border-color: #66b5f9; /* Hover border color */
+}
+
+/* Inner circle for radio button */
+.filter-group input[type='radio']::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+.filter-group input[type='radio']:checked::before {
+  transform: scale(1);
+  background-color: #fff; /* Inner circle color */
+}
+
+/* Filter group checkbox */
+.filter-group-checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 30px;
+  gap: 10px; /* Space between each checkbox */
+}
+
+/* General checkbox styling */
+.filter-checkbox [type='checkbox'] {
+  appearance: none; /* Remove default styling */
+  width: 16px; /* Default checkbox size */
+  height: 16px; /* Default checkbox size */
+  border-radius: 4px; /* Rounded corners for the checkbox */
+  margin-right: 10px; /* Space between the checkbox and label */
+  border: 1px solid #ccc; /* Custom border color */
+  background-color: white; /* Default background color */
+  cursor: pointer; /* Pointer cursor for clickable area */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* Checkbox checked state */
+.filter-checkbox [type='checkbox']:checked {
+  background-color: #66b5f9; /* Background color when checked */
+  border-color: #66b5f9; /* Border color when checked */
+}
+
+/* Checkbox label */
+.filter-checkbox {
+  display: flex;
+  align-items: center; /* Aligns input and label vertically */
+  gap: 10px; /* Adds space between input and label */
+} 
+
+.btn-filter{
+  margin-top: 20px  ;
+  width: 90%;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #66b5f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 800;
+
+}
+
+.btn-filter:hover{
+  background-color: #1877F2;
+  cursor: pointer;
+}

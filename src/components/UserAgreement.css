@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Scope all styles to the user-agreement-wrapper class */
+.user-agreement-wrapper {
+  padding: 20px;
+  min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
+  position: relative; /* Ensure the button's position is relative to this container */
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 50px;
+  padding-left: 300px; /* Adjusted padding to ensure proper spacing */
+  padding-right: 300px; /* Adjusted padding to ensure proper spacing */
+}
+
+.user-agreement-wrapper h1 {
+  text-align: left; /* Align the main heading to the left */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-agreement-wrapper h2 {
+  text-align: left; /* Align subheadings to the left */
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.user-agreement-wrapper p {
+  text-align: left; /* Align paragraphs to the left */
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Increased margin at the bottom for spacing */
+  padding-right: 20px; /* Added padding to the right to ensure text doesn't touch the edge */
+}
+
+.user-agreement-wrapper .effective-date {
+  font-weight: 500; /* Slightly bolder for emphasis */
+  margin-top: 0; /* Remove top margin to keep close to the heading */
+  margin-bottom: 20px; /* Add space below the effective date */
+}
+
+.user-agreement-wrapper .back-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #66b5f9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure the button is above other content */
+}
+
+.user-agreement-wrapper .back-button:hover {
+  background-color: #0056b3;
+}

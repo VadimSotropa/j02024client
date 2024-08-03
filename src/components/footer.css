@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Apply Montserrat font globally */
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+/* Footer Container */
+.footer {
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width of the page */
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text for contrast */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Center the footer content */
+    align-items: center; /* Center items vertically */
+    padding: 15px 0; /* Add padding to the top and bottom */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Shadow for visual separation */
+    z-index: 1000; /* Ensure footer is above other content */
+  }
+  
+  /* Footer Content */
+  .footer-content {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Even spacing between blocks */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Full width */
+    flex-direction: row;
+    padding: 0 20px; /* Horizontal padding */
+    
+    flex-wrap: wrap; /* Allow blocks to wrap on smaller screens */
+  }
+  
+  /* Individual Footer Blocks */
+  .footer-block {
+   
+   
+    padding: 5px 10px; /* Padding within each block */
+    text-align: center; /* Center align text */
+    white-space: normal; /* Allow text wrapping */
+    overflow: visible; /* Ensure text is visible */
+    text-overflow: clip; /* No clipping for text overflow */
+    display: flex; /* Use flexbox within blocks */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Align text vertically */
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  /* Footer Block Text */
+  .footer-block p {
+    font-size: 14px; /* Set font size */
+    color: #ccc; /* Set text color */
+    margin: 0; /* Remove margin */
+    line-height: 1.5; /* Set line height for readability */
+    display: block; /* Block display for text */
+  }
+  
+  /* Links in Footer */
+  .footer-block a {
+    color: #66b5f9; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .footer-block a:hover {
+    color: #fff; /* Change link color on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack blocks vertically on smaller screens */
+      align-items: center; /* Center align items */
+      text-align: center; /* Center text in smaller viewports */
+      gap: 20px; /* Reduce gap for smaller screens */
+    }
+  
+    .footer-block {
+      max-width: 100%; /* Full width for blocks on smaller screens */
+      margin-bottom: 10px; /* Add space between blocks */
+    }
+  }
+  
