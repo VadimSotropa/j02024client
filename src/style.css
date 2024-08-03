@@ -30,6 +30,7 @@ body {
 }
 
 .opinion-header{
+  margin-top: 15px;
   font-size: 40px;
   
 }
@@ -42,7 +43,7 @@ body {
   text-align: left; /* Align text to the left */
   font-size: 19px;
  font-weight: 400;
- color: #ccc;
+ color: #8e8e8e;
  
 }
 
@@ -60,7 +61,7 @@ body {
   align-items: center;
   cursor: pointer;
   margin-right: 15px; /* Space between each radio button */
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 400;
   color: #333;
 }
@@ -68,7 +69,7 @@ body {
 .radio-label input[type='radio'] {
   appearance: none; /* Remove default styling */
   width: 18px;
-  height: 18px;
+  height: 19px;
   border-radius: 50%;
   margin-right: 10px; /* Space between the radio button and the label */
   border: 1px solid #ccc; /* Custom border color */
@@ -239,6 +240,7 @@ button:hover {
   justify-content: flex-end;
   padding-right: 20px;
   padding-bottom: 20px;
+  text-align: right;
   
 }
 

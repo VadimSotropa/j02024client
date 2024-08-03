@@ -6,8 +6,10 @@ import CommentList from './components/CommentList';
 import CommentForm from './components/CommentForm';
 import Footer from './components/Footer';
 import UserAgreement from './components/UserAgreement';
+import PrivacyPolicy from './components/Privacy';
 import PictureWithText from './components/PictureWithText';
-import picture from './image/tamaraboitsova_three_Olympic_athletes_of_different_nationalitie_71e2646a-a8d1-47e9-8ae6-005f5540ebc6.png';
+import picture from './image/headerimage.png';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   const [comments, setComments] = useState([]);
@@ -76,6 +78,7 @@ const App = () => {
 
   return (
     <Router>
+       <ScrollToTop />
       <div className="app">
         <Routes>
           <Route path="/" element={
@@ -84,7 +87,7 @@ const App = () => {
                 imageUrl={picture} // Use the imported image here
                 title="FEEDBACK PARIS 2024"
                 subtitle1="Tell us about your impressions of the Olympic Games in Paris"
-                subtitle2="Let journalists, politicians, and organizers hear you"
+                subtitle2="Let journalists, politicians and organizers hear you"
               />
               <h2 className='opinion-header'>Your opinion matters</h2>
               <CommentForm addComment={addComment} />
@@ -103,6 +106,7 @@ const App = () => {
             </>
           } />
           <Route path="/user-agreement" element={<UserAgreement />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
     </Router>

@@ -5,7 +5,7 @@
  
   overflow: hidden; /* Ensure the image and text overlay fit within the container */
  margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 4px 8px rgba(3, 45, 60, 0.1); /* Soft shadow for depth */
 }
 
 .picture-image {
@@ -33,14 +33,16 @@
 }
 
 .title {
-  font-size: 2.5em;
-  margin: 10px 0;
+  font-size: 4.0em;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-weight: 700; /* Bold title */
 }
 
 .subtitle {
-  font-size: 1.2em;
-  margin: 5px 0;
+  font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-weight: 400; /* Regular weight for subtitles */
   line-height: 1.4; /* Improved readability */
 }

@@ -124,7 +124,10 @@ const CommentForm = ({ addComment }) => {
         ></textarea>
       </div>
       <div className='submit-term'>
-        <p>By submitting your comment, you agree to our <Link cla to="/user-agreement">User Agreement and Privacy Policy</Link></p>
+        <p>By clicking "Submit Comment," you acknowledge that you have read and agree to our 
+          <Link to="/user-agreement" className="agreement-link"> User Agreement</Link> and  
+          <Link to="/privacy-policy" className="policy-link"> Privacy Policy</Link>.
+        </p>
       </div>
       <button type="submit" className='btn-submit'><p>Submit Comment</p></button>
     </form>
