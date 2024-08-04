@@ -482,6 +482,9 @@ button:hover {
 
 /* Extra Large Screens (Desktops larger than 1600px) */
 @media (min-width: 1600px) {
+  .filter-mobile {
+    display: none; /* Hide by default (for desktop and tablets) */
+  }
 
 }
 
