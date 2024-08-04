@@ -859,8 +859,8 @@ button:hover {
   align-items: center;
   justify-content: center;
   padding: 5px 10px;
-  background-color: #66b5f9;
-  border: 1px solid #66b5f9;
+  background-color: #ccc;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
