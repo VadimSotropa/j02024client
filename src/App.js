@@ -9,6 +9,7 @@ import PictureWithText from './components/PictureWithText';
 import picture from './image/headerimage.png';
 import ScrollToTop from './components/ScrollToTop';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   const [comments, setComments] = useState([]);
@@ -108,6 +109,8 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
+      <SpeedInsights/>
+      <Analytics/>
     </Router>
   );
 };
