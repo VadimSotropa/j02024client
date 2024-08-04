@@ -250,6 +250,10 @@ button:hover {
   margin-bottom: 25px;
 }
 
+.comment-message{
+  padding-bottom: 100px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .feedback-type {
@@ -266,6 +270,7 @@ button:hover {
   .comment-list {
     flex-direction: column;
     gap: 0;
+    
   }
 
   .comment-message,
