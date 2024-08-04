@@ -1,5 +1,3 @@
-// client/src/App.js
-
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import CommentList from './components/CommentList';
@@ -29,7 +27,7 @@ const App = () => {
         feedbackCategories: feedbackCategoriesFilter.join(','),
       });
 
-      const response = await fetch(`http://localhost:5001/api/comments?${query}`);
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/comments?${query}`);
       const data = await response.json();
       setComments(data);
     } catch (error) {
@@ -40,7 +38,7 @@ const App = () => {
   // Add a new comment to the database and refresh comments
   const addComment = async (commentData) => {
     try {
-      const response = await fetch('http://localhost:5001/api/comments', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/comments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
