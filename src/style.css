@@ -247,7 +247,7 @@ button:hover {
 .ligne-betwen{
   width: 70%;
   border-bottom: 0.5px solid rgb(197, 190, 190);
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 /* Responsive adjustments */
@@ -385,7 +385,7 @@ button:hover {
   width: 18px; /* Adjusted size */
   height: 18px;
   border-radius: 50%;
-  margin-right: 10px; /* Space between the radio button and the label */
+  margin-right: 15px; /* Space between the radio button and the label */
   border: 1px solid #ccc; /* Custom border color */
   background-color: white; /* Background color */
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -479,3 +479,428 @@ button:hover {
   background-color: #1877F2;
   cursor: pointer;
 }
+
+/* Extra Large Screens (Desktops larger than 1600px) */
+@media (min-width: 1600px) {
+
+}
+
+/* Large Screens (Desktops and large laptops between 1200px and 1599px) */
+@media (max-width: 1599px) and (min-width: 1200px) {
+
+
+/* Base styles (Desktop and Tablets) */
+.filter-mobile {
+  display: none; /* Hide by default (for desktop and tablets) */
+}
+}
+
+/* Medium Screens (Tablets and small laptops between 900px and 1199px) */
+@media (max-width: 1199px) and (min-width: 900px) {
+  .comment-form {
+    width: 60%;
+  }
+
+  .feedback-type,
+  .feedback-categories {
+    width: 100%;
+  }
+
+  .comment-list {
+    padding-left: 20px;
+  }
+
+  .wall-header {
+    font-size: 38px;
+  }
+
+
+/* Base styles (Desktop and Tablets) */
+.filter-mobile {
+  display: none; /* Hide by default (for desktop and tablets) */
+}
+}
+
+/* Small Screens (Tablets and larger phones between 600px and 899px) */
+@media (max-width: 899px) and (min-width: 600px) {
+
+  /* Title text */
+
+
+  .filter-mobile {
+    display: none; /* Hide by default (for desktop and tablets) */
+  }
+  
+  .comment-form {
+    width: 80%;
+  }
+
+  .feedback-type,
+  .feedback-categories {
+    width: 100%;
+  }
+
+  .comment-list {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wall-header {
+    font-size: 34px;
+  }
+}
+
+/* Extra Small Screens (Phones 600px and smaller) */
+@media (max-width: 600px) {
+
+  .opinion-header  {
+    width: 100%;
+    
+    font-size: 25px;
+  
+   
+  }
+
+  .wall-header{
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+
+  .comment-form {
+    width: 90%;
+  }
+
+  .feedback-type,
+  .feedback-categories {
+    width: 100%;
+  }
+
+  .comment-list {
+    flex-direction: column;
+    padding-left: 0;
+    width: 100%;
+   
+  }
+
+  .comment-message {
+    width: 100%;
+    
+
+  }
+
+  .btn-submit,
+  .btn-filter {
+    width: 100%;
+  }
+
+  .wall-header {
+    font-size: 28px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+  
+  .form-input-container input{
+   width: 100%;
+  }
+
+  .form-input-container textarea{
+    width: 100%;
+   }
+
+
+   .feedback-type {
+    
+    display: flex;
+    justify-content: space-between; /* Align radio buttons evenly */
+    font-size: 15px;
+    margin-top: 10px; /* Add space between the title and radio buttons */
+    /* background-color: red; */
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px; /* Space between each radio button */
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .radio-label input[type='radio'] {
+    appearance: none; /* Remove default styling */
+    width: 18px;
+    height: 19px;
+    border-radius: 50%;
+    margin-right: 10px; /* Space between the radio button and the label */
+    border: 1px solid #ccc; /* Custom border color */
+    background-color: white; /* Background color */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .radio-label input[type='radio']:checked {
+    background-color:  #66b5f9; /* Checked background color */
+    border-color:  #66b5f9;
+  }
+  
+  .radio-label input[type='radio']:hover {
+    border-color:  #66b5f9; /* Hover border color */
+  }
+  
+  .radio-label input[type='radio']::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+  }
+  
+  .radio-label input[type='radio']:checked::before {
+    transform: scale(1);
+    background-color: #fff; /* Inner circle color */
+  }
+  
+  /* Categories section */
+.feedback-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for the first 3 rows */
+  grid-gap: 15px; /* Space between items */
+  font-size: 15px;
+}
+
+/* Last row with a single column */
+.feedback-categories:last-child {
+  grid-column: span 2; /* Ensure the last row spans both columns */
+}
+
+/* Ensure labels do not overflow container */
+.feedback-categories label {
+  overflow: hidden; /* Hide overflow to maintain alignment */
+  text-overflow: ellipsis; /* Display ellipsis for long text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+/* General checkbox styling */
+.feedback-categories input[type='checkbox'] {
+  appearance: none; /* Remove default styling */
+  width: 16px; /* Default checkbox size */
+  height: 16px; /* Default checkbox size */
+  border-radius: 10%; /* Rounded corners for the checkbox */
+  margin-right: 10px; /* Space between the checkbox and label */
+  border: 1px solid #ccc; /* Custom border color */
+  background-color: white; /* Default background color */
+  cursor: pointer; /* Pointer cursor for clickable area */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checkbox checked state */
+.feedback-categories input[type='checkbox']:checked {
+  background-color: #66b5f9; /* Background color when checked */
+  border-color: #66b5f9; /* Border color when checked */
+}
+
+/* Label styling */
+.feedback-categories label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+
+/* Mobile Filters Section */
+.filter-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  
+  margin-bottom: 30px;
+}
+
+/* Filter Container */
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 90%;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Filter group for radio buttons */
+.filter-group {
+  display: flex;
+  flex-direction: row; /* Align radio buttons in a row */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between each radio button */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Radio buttons styling */
+.filter-group input[type='radio'] {
+  display: none; /* Hide the default radio button */
+}
+
+.filter-group label {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: #8e8e8e;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center; /* Center text */
+  width: auto; /* Fit content */
+  
+}
+
+/* Radio button selected state */
+.filter-group input[type='radio']:checked + label {
+  background-color: #66b5f9; /* Persistent blue color when checked */
+  color: white;
+  border-color: #66b5f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow when selected */
+}
+
+/* Hover state for radio buttons */
+.filter-group label:hover {
+  background-color: #eaf4fc; /* Light blue hover effect */
+}
+
+/* Filter group for checkboxes */
+.filter-group-checkbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 0px 0 10px 0px;
+}
+
+/* Checkbox styling */
+.filter-group-checkbox input[type='checkbox'] {
+  display: none; /* Hide the default checkbox */
+}
+
+.filter-group-checkbox label {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center; /* Aligns input and label vertically */
+  justify-content: center; /* Centers the label content */
+  height: 100%;
+
+}
+
+/* Checkbox checked state */
+.filter-group-checkbox input[type='checkbox']:checked + label {
+  background-color: #66b5f9; /* Persistent blue color when checked */
+  color: white; /* White text when checked */
+  border-color: #66b5f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow when selected */
+}
+
+/* Checkbox unchecked state (default) */
+.filter-group-checkbox input[type='checkbox'] + label {
+  background-color: white; /* White background when unchecked */
+  color: #66b5f9; /* Blue text for consistency */
+  color: #8e8e8e;
+}
+
+/* Hover state for checkboxes */
+.filter-group-checkbox label:hover {
+  background-color: #eaf4fc; /* Light blue hover effect */
+  color: #66b5f9; /* Blue text on hover */
+}
+
+/* Button styling */
+.btn-filter {
+  margin-top: 20px;
+  width: 30%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #66b5f9;
+  border: 1px solid #66b5f9;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 700;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  cursor: pointer;
+}
+
+.btn-filter:hover {
+  background-color: #1877f2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter-group {
+  order: -1; /* Ensure filters appear before comments */
+  margin-bottom: 10px; /* Add space below filters */
+}
+
+.filter-deckstop {
+  display: none;
+}
+
+.submit-term{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: right;
+  font-size: 10px;
+}
+
+
+
+}
+

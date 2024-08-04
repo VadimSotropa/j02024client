@@ -57,3 +57,28 @@
 .user-agreement-wrapper .back-button:hover {
   background-color: #0056b3;
 }
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .user-agreement-wrapper {
+    padding-left: 20px; /* Reduced padding for mobile */
+    padding-right: 20px; /* Reduced padding for mobile */
+  }
+  
+  .user-agreement-wrapper h1 {
+    font-size: 1.4em; /* Further adjust font size for mobile */
+  }
+  
+  .user-agreement-wrapper h2 {
+    font-size: 1em; /* Further adjust font size for mobile */
+  }
+  
+  .user-agreement-wrapper p {
+    font-size: 0.9em; /* Font size adjusted for smaller screens */
+  }
+  
+  .user-agreement-wrapper .back-button {
+    padding: 8px 16px; /* Adjust padding for mobile */
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+}
