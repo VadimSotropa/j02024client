@@ -8,6 +8,7 @@ import PrivacyPolicy from './components/Privacy';
 import PictureWithText from './components/PictureWithText';
 import picture from './image/headerimage.png';
 import ScrollToTop from './components/ScrollToTop';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const App = () => {
   const [comments, setComments] = useState([]);
