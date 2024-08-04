@@ -15,11 +15,11 @@ const PrivacyPolicy = () => {
 
       <h1>Privacy Policy</h1>
 
-      <p className="effective-date">Effective Date: 03/08/2024</p>
+      <p className="effective-date">Effective Date: 26/07/2024</p>
 
       <h2>1. General Provisions</h2>
       <p>
-        1.1. This Privacy Policy (hereinafter referred to as the "Policy") describes how we, [Your Company/Website Name], collect, use, and protect the personal data of users of our website websitename.com (hereinafter referred to as the "Website").
+        1.1. This Privacy Policy (hereinafter referred to as the "Policy") describes how we, https://www.feedback-paris2024.com/ and https://www.feedback-paris-2024.com, collect, use, and protect the personal data of users of our website https://www.feedback-paris2024.com/ and https://www.feedback-paris-2024.com (hereinafter referred to as the "Website").
       </p>
 
       <h2>2. Data Collected</h2>
@@ -74,8 +74,8 @@ const PrivacyPolicy = () => {
 
       <h2>10. Contact Information</h2>
       <p>
-        10.1. If you have any questions or requests regarding this Policy or the processing of your data, please contact us at: email@example.com.<br />
-        10.2. For GDPR compliance-related questions, you may contact our Data Protection Officer (DPO) at: email@example.com.
+        10.1. If you have any questions or requests regarding this Policy or the processing of your data, please contact us at: feedbackparis2024@gmail.com<br />
+        10.2. For GDPR compliance-related questions, you may contact our Data Protection Officer (DPO) at: feedbackparis2024@gmail.com.
       </p>
 
       <button className="back-button" onClick={handleBackClick}>

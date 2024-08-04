@@ -12,7 +12,7 @@ const UserAgreement = () => {
   return (
     <div className="user-agreement-wrapper">
       <h1>User Agreement</h1>
-      <p className="effective-date">Effective Date: 03/08/2024</p>
+      <p className="effective-date">Effective Date: 26/07/2024</p>
       
       <h2>1. General Provisions</h2>
       <p>

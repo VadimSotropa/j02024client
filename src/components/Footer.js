@@ -25,7 +25,7 @@ const Footer = () => {
 
         {/* Block 3: Mention the Website */}
         <div className="footer-block">
-          <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p><a href="mailto:feedbackparis2024@gmail.com">feedbackparis2024@gmail.com</a></p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* Block 3: Mention the Website */}
         <div className="footer-block">
-          <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+          <p><a href="mailto:feedbackparis2024@gmail.com">feedbackparis2024@gmail.com</a></p>
         </div>
       </div>
 
